@@ -1,0 +1,31 @@
+@import "../mixins";
+.downloads {
+  @include reset-list;
+  @include flex;
+  justify-content: space-around;
+  width: 237px;
+  margin: 0 auto 51px 32px;
+}
+
+.downloads__item {
+  font-size: 0;
+}
+
+.downloads__link {
+  display: block;
+  width: 46px;
+  height: 57px;
+  background: url("../../img/icons/logo-apple.svg") center no-repeat;
+  &--android {
+    background: url("../../img/icons/logo-android.svg") center  no-repeat;
+  }
+  &--windows {
+    background: url("../../img/icons/logo-microsoft.svg") center no-repeat;
+  }
+}
+
+@media (max-width: 1200px) {
+  .downloads {
+    width: 300px;
+  }
+}

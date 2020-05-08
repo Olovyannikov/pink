@@ -1,0 +1,61 @@
+.reviews {
+  text-align: center;
+  background-color: #fff;
+}
+
+.reviews__text {
+  padding-top: 44px;
+  width: 790px;
+  margin: 0 auto;
+
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+
+  color: #283645;
+}
+
+.reviews__text::before {
+  content: '«';
+}
+
+.reviews__text::after {
+  content: '»';
+}
+
+.reviews__author {
+  font-size: 24px;
+  line-height: 30px;
+  font-family: 'Open Sans', Arial,sans-serif;
+  color: #000000;
+  margin-top: 36px ;
+  margin-bottom: 0px;
+}
+
+.reviews__author-info {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  margin-top: 2px;
+}
+
+.reviews__quotes-icon {
+  padding-top: 74px;
+}
+
+@media (max-width: 1200px) {
+  .reviews__quotes-icon {
+    display: none;
+  }
+  .reviews__author-info--job {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .reviews__text {
+    width: 280px;
+  }
+}
+
+
