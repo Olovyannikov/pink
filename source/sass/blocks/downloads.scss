@@ -15,12 +15,12 @@
   display: block;
   width: 46px;
   height: 57px;
-  background: url("../../img/icons/logo-apple.svg") center no-repeat;
+  background: url("../img/icons/logo-apple.svg") center no-repeat;
   &--android {
-    background: url("../../img/icons/logo-android.svg") center  no-repeat;
+    background: url("../img/icons/logo-android.svg") center  no-repeat;
   }
   &--windows {
-    background: url("../../img/icons/logo-microsoft.svg") center no-repeat;
+    background: url("../img/icons/logo-microsoft.svg") center no-repeat;
   }
 }
 

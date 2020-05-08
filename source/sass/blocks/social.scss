@@ -23,7 +23,7 @@
 }
 
 .social__list-link {
-  background: url("../../img/icons/icon-twitter.svg") no-repeat center;
+  background: url("../img/icons/icon-twitter.svg") no-repeat center;
   font-size: 0;
   text-decoration: none;
   width: 50px;
@@ -32,10 +32,10 @@
   border-radius: 50%;
   border: 3px solid rgba(#283645,.3);
   &--facebook {
-    background-image: url("../../img/icons/icon-facebook.svg");
+    background-image: url("../img/icons/icon-facebook.svg");
   }
   &--youtube {
-    background-image: url("../../img/icons/icon-youtube.svg");
+    background-image: url("../img/icons/icon-youtube.svg");
   }
   &:hover {
     border-color: #283645;

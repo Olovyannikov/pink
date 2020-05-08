@@ -57,12 +57,12 @@
 }
 
 .table__body-cell--yes {
-  background: url("../../img/icon-yes.svg") center no-repeat;
+  background: url("../img/icon-yes.svg") center no-repeat;
   background-size: 31px;
 }
 
 .table__body-cell--no {
-  background: url("../../img/icon-no.svg") center no-repeat;
+  background: url("../img/icon-no.svg") center no-repeat;
   background-size: 31px;
 }
 
@@ -76,7 +76,7 @@
   position: absolute;
   width: 74px;
   height: 73px;
-  background: url("../../img/bg-hit.svg") no-repeat;
+  background: url("../img/bg-hit.svg") no-repeat;
 }
 
 .price__table-cell--hot::after {
