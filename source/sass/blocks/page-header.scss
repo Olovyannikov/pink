@@ -118,12 +118,15 @@
   .page-header {
     background: url("../img/bg-back-mobile@1x.jpg") no-repeat center 0;
   }
+  .page-header__wrapper {
+    margin-bottom: 0;
+  }
   .page-header::after {
     background: url("../img/iphone-hand-mobile@1x.png") no-repeat bottom;
     left: 0;
     width: 280px;
     height: 300px;
-    bottom: 266px;
+    bottom: 264px;
   }
   .page-header__title {
     display: none;
@@ -140,7 +143,7 @@
     width: 270px;
     padding: 10px 0;
     margin-bottom: 30px;
-    margin-top: 10px;
+    margin-top: 90px;
   }
   .page-header__text {
     font-size: 14px;
