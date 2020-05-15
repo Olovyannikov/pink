@@ -124,7 +124,9 @@
   .page-header::after {
     background: url("../img/iphone-hand-mobile@1x.png") no-repeat bottom;
     left: 0;
-    width: 280px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     height: 300px;
     bottom: 264px;
   }

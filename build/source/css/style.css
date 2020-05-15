@@ -785,7 +785,11 @@ body {
   .page-header::after{
     background: url("../img/iphone-hand-mobile@1x.png") no-repeat bottom;
     left: 0;
-    width: 280px;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
     height: 300px;
     bottom: 264px; }
   .page-header__title{
@@ -893,10 +897,10 @@ body {
     transition: .3s all;
     left: 0; }
   #btn-2:checked ~ .table__mobile-table{
-    margin-left: -530px;
+    margin-left: -560px;
     transition: .3s all; }
   #btn-3:checked ~ .table__mobile-table{
-    margin-left: -933px;
+    margin-left: -960px;
     transition: .3s all; }
   #btn-1,
   #btn-2,
@@ -921,7 +925,7 @@ body {
     height: 5px;
     border: 3px solid #283645; }
   .price__wrapper-background{
-    height: 35px; }
+    height: 36px; }
   .price__table-cell--hot::before{
     top: 0; }
   .price__table-cell--hot::after{
