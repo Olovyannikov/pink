@@ -13,8 +13,7 @@ var rename = require("gulp-rename");
 var svgstore = require("gulp-svgstore");
 var svgmin = require("gulp-svgmin");
 var jsmin = require('gulp-jsmin');
-var del = require("del");
-var run = require("run-sequence");
+var del = require("del"); 
 
 gulp.task("clean", function() {
   return del("build");
