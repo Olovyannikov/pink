@@ -1,0 +1,136 @@
+.table {
+  border-collapse: collapse;
+  margin: 40px auto 0;
+  transition: .2s ease-in-out;
+}
+.table__header-div {
+  background-color: #283645;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  border-right: 2px solid #FFFFFF;
+  &--disabled {
+    background-color: transparent;
+  }
+  &--subtitle {
+    font-weight: lighter;
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+}
+
+.table__body-div--descript {
+  color: #283645;
+}
+.table__body-cell-text {
+  width: 80%;
+  display: block;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+}
+.table__body-div {
+  padding: 14px 25px;
+  background-color: #fff;
+  border: 2px solid #f2f2f2;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.table__body-cell--yes {
+  background-size: 31px;
+  background: #fff url("../img/icon-yes.svg") no-repeat 90% 50%;
+
+}
+
+.table__body-cell--no {
+  background-size: 31px;
+  background: #fff url("../img/icon-no.svg") no-repeat 90% 50%;
+}
+
+.price__table-cell--hot {
+   position: relative;
+  font-size: 14px;
+ }
+
+.price__table-cell--hot::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 74px;
+  height: 73px;
+  background: url("../img/bg-hit.svg") no-repeat;
+}
+
+.price__table-cell--hot::after {
+  content: 'ХИТ';
+  font-size: 14px;
+  display: block;
+  position: absolute;
+  width: 74px;
+  height: 73px;
+  top: 6px;
+  left: 10px;
+  transform: rotate(-45deg);
+}
+
+.first-table {
+  transform: translate(0,0);
+}
+.second-table {
+  transform: translate(-32%,0);
+}
+.third-table {
+  transform: translate(-65%,0);
+}
+
+@media (max-width: 660px) {
+  .table {
+    width: 300%;
+  }
+  .table__body-div--descript {
+    display: none;
+  }
+  .table__header-div {
+    &--disabled {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 660px) {
+  .table__header-div {
+    min-width: 150px;
+  }
+  .table__body-cell-text {
+       display: none;
+     }
+  .table__body-cell--yes {
+    background-size: 31px;
+    background: #fff url("../img/icon-yes.svg") no-repeat center;
+
+  }
+
+  .table__body-cell--no {
+    background-size: 31px;
+    background: #fff url("../img/icon-no.svg") no-repeat center;
+  }
+}
+@media (min-width: 1200px) {
+  .table__header-div {
+    min-width: 250px;
+  }
+  .price__table-cell--hot::after {
+    width: 74px;
+    height: 73px;
+    top: 6px;
+    left: 10px;
+  }
+
+
+
+}

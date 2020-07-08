@@ -1,0 +1,104 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider__indicators-container {
+  display: flex;
+  margin-top: 65px;
+}
+
+.slider__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__items {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.slider__item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.slider__control {
+  background: none;
+  border: none;
+  &--left,
+  &--right {
+    background: url('../img/left-arrow.svg') no-repeat top left;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    height: 41px;
+    width: 22px;
+    position: absolute;
+    bottom: 160px;
+    opacity: .3;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &--right {
+    transform: rotate(180deg);
+    right: 0;
+  }
+  &--left {
+    left: 0;
+  }
+}
+
+.slider__indicators {
+  display: none;
+}
+
+/* стили для индикаторов */
+@media (max-width: 1200px) {
+
+  .slider__indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    padding-bottom: 30px;
+    list-style: none;
+    margin: 0 15%;
+  }
+
+  .slider__indicators li {
+    width: 6px;
+    height: 6px;
+    margin-right: 3px;
+    margin-left: 3px;
+    cursor: pointer;
+    background-color: #bec2c7;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 3px solid white;
+  }
+
+  .slider__indicators li.active {
+    width: 5px;
+    height: 5px;
+    background-color: #FFF;
+    border: 3px solid #283645;
+  }
+}
+@media (max-width: 1200px) {
+
+  .slider__control {
+    display: none;
+  }
+}

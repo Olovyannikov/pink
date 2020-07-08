@@ -1,71 +1,76 @@
 .research {
-  background-color: $background-grey;
-  padding-bottom: 67px;
+  display: none;
 }
 
-.research__wrapper {
-  @include flex;
-  align-items: center;
-}
 
-.research__wrapper-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.research__titile {
-  font-size: 30px;
-  line-height: 30px;
-}
-
-.research__text {
-  color: #283645;
-  font-size: 18px;
-  line-height: 30px;
-  margin-bottom: 14px;
-}
-
-.research__link {
-  color: #d22856;
-  font-size: 18px;
-  line-height: 30px;
-}
-.research__wrapper-column--left {
-  width: 40%;
-}
-.research__wrapper-column--right {
-  width: 60%;
-}
-.research__titile {
-  margin-top: 50px;
-  margin-bottom: 5px;
-}
-
-@media (max-width: 1200px) {
+@media (min-width: 660px) {
   .research {
-    background-color: #FFFFFF;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 55px;
+    display: block;
+  }
+  .research__wrapper {
+    width: 100%;
+    max-width: 620px;
+    margin: 0 auto;
+    display: flex;
+    padding: 60px 20px 0;
   }
 
-  .research__wrapper-column--left {
-    width: 50%;
-    align-items: center;
+  .research__titile {
+    font-size: 30px;
+    line-height: 36px;
+    max-width: 55%;
   }
-  .research__wrapper-column--right {
-    width: 50%;
+
+  .research__text  {
+    color: #283645;
+    font-size: 14px;
+    line-height: 24px;
+    br {
+    display: none;
+    }
+  }
+  .research__link {
+    color: #c42a55;
+    font-size: 14px;
+    line-height: 24px;
   }
 
   .research__wrapper {
-    justify-content: center;
-    margin: 0 auto;
-    width: 93%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .research__wrapper-column {
+    &--right {
+      max-width: 570px;
+      width: 50%;
+    }
+    &--left {
+      padding-right: 10px;
+      width: 50%;
+    }
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 1200px) {
   .research {
-    display: none;
+    background-color: #f2f2f2;
+  }
+  .research__wrapper {
+    background-color: #f2f2f2;
+    max-width: 940px;
+  }
+  .research__titile {
+    max-width: 100%;
+    line-height: 30px;
+  }
+  .research__link,.research__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .research__svg {
+    width: 298px;
+    height: 345px;
   }
 }

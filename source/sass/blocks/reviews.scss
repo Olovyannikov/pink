@@ -29,21 +29,38 @@
   font-family: 'Open Sans', Arial,sans-serif;
   color: #000000;
   margin-top: 36px ;
-  margin-bottom: 0px;
+  margin-bottom: 0;
+  order: -1;
 }
 
 .reviews__author-info {
-  font-size: 18px;
-  line-height: 30px;
-  color: #283645;
-  margin-top: 2px;
+  display: none;
 }
 
 .reviews__quotes-icon {
   padding-top: 74px;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 660px) and (max-width: 1199px) {
+  .reviews__text {
+    width: 620px;
+  }
+}
+
+@media (min-width: 660px) {
+  .reviews__author {
+    order: 0;
+  }
+  .reviews__author-info {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+    margin-top: 2px;
+  }
+}
+
+@media (max-width: 1199px) {
   .reviews__quotes-icon {
     display: none;
   }
@@ -52,9 +69,10 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 659px) {
   .reviews__text {
     width: 280px;
+    padding-top: 20px;
   }
 }
 

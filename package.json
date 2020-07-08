@@ -1,10 +1,9 @@
 {
-  "name": "pink",
+  "name": "pinky",
   "version": "0.1.0",
   "private": true,
-  "description": "Личный проект «Пинк» от HTML Academy",
+  "description": "Personal project Pink by HTML Academy",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "6.7.x",
     "browser-sync": "^2.26.7",
     "css-mqpacker": "^6.0.1",

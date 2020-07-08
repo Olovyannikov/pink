@@ -1,23 +1,37 @@
 @import "fonts";
-@import "vars";
-@import "mixins";
-@import "blocks/container";
-@import "blocks/downloads";
-@import "blocks/nav";
-@import "blocks/page-header";
-@import "blocks/page-main";
-@import "blocks/research";
-@import "blocks/reviews";
-@import "blocks/slider";
-@import "blocks/price";
-@import "blocks/page-footer";
-@import "blocks/contacts";
-@import "blocks/social";
+@import "blocks/pageheader";
+@import "blocks/navigation.scss";
+@import "blocks/downloads.scss";
+@import "blocks/page-main.scss";
+@import "blocks/research.scss";
+@import "blocks/reviews.scss";
+@import "blocks/slider.scss";
+@import "blocks/price.scss";
+@import "blocks/table.scss";
+@import "blocks/social.scss";
+@import "blocks/footer.scss";
+
+$tablet-width: 660px;
+$desktop-width: 1200px;
 
 body {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
-  background: $bg-color;
-  font-family: 'Open Sans',Arial,sans-serif;
+  min-width: 320px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  min-width: 320px;
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+
+  }
+}
+
+img {
+  max-width: 100%;
 }

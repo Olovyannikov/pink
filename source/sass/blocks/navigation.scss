@@ -1,0 +1,151 @@
+.navigation {
+  padding: 0 0;
+
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  background-color: #00000055;
+}
+
+.navigation__wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: inherit;
+  border-bottom: 2px solid #00000055;
+  &--closed {
+    border-bottom: none;
+  }
+}
+
+.navigation__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.navigation__list--close {
+  display: none;
+}
+
+.navigation__list-item {
+  border-bottom: 2px solid #00000055;
+  border-top: 1px solid #ffffff55;
+  padding: 20px 0;
+}
+
+.navigation__list-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: ease-in-out .2s;
+  &:hover {
+    color: #c42a55;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+  }
+}
+
+
+.navigation--open {
+  background-color: #283645;
+}
+
+.navigation__button {
+  padding: 0;
+  margin-right: 20px;
+  font-size: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  align-self: center;
+  &:hover, &:focus, &:focus::after {
+    background-color: #c42a55;
+  }
+}
+
+.navigation__button--close {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  &::after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    transform: rotate(90deg);
+  }
+}
+
+.navigation__button--close:hover::after {
+  background-color: #c42a55;
+}
+
+.navigation__button--open {
+  width: 45px;
+  height: 5px;
+  background-color: #fff;
+  &::after {
+    content: '';
+    display: block;
+    width: 45px;
+    height: 5px;
+    background-color: #fff;
+    transform: translateY(5px);
+  }
+  &::before {
+    content: '';
+    display: block;
+    width: 45px;
+    height: 5px;
+    background-color: #fff;
+    transform: translateY(-10px);
+  }
+}
+
+.navigation__button--open:hover::after,
+.navigation__button--open:focus::after{
+  background-color: #c42a55;
+}
+
+.navigation__button--open:hover::before,
+.navigation__button--open:focus::before{
+  background-color: #c42a55;
+}
+
+@media (min-width: 1200px) {
+  .navigation {
+    width: 960px;
+    margin: 0 auto;
+    position: static;
+    background-color: transparent;
+  }
+  .navigation__button {
+    display: none;
+  }
+  .navigation__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navigation__list-item {
+    border: none;
+  }
+  .navigation__list-link {
+    font-weight: 400;
+    text-transform: none;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .navigation__wrapper {
+    width: 150px;
+    padding: 0 150px 0 10px;
+  }
+}
