@@ -17,7 +17,7 @@
 }
 
 .social__list-item {
-  background: url("../../img/icon-twitter.svg") no-repeat center;
+  background: url("../img/icon-twitter.svg") no-repeat center;
   width: 18px;
   height: 14px;
   border: 3px solid #28364525;
@@ -25,10 +25,10 @@
   padding: 15px;
   margin-right: 10px;
   &--facebook {
-    background: url("../../img/icon-facebook.svg") no-repeat center;
+    background: url("../img/icon-facebook.svg") no-repeat center;
   }
   &--youtube {
-    background: url("../../img/icon-youtube.svg") no-repeat center;
+    background: url("../img/icon-youtube.svg") no-repeat center;
   }
 }
 
