@@ -1,0 +1,161 @@
+.photos {
+  padding-top: 50px;
+  margin-bottom: 40px;
+}
+
+.photos__image-container {
+  width: 100%;
+  position: relative;
+
+}
+
+.photos__regular--best {
+  position: relative;
+  &::before {
+    content: 'Панорама дня';
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 140px;
+    right: 20px;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    background-color: #d22856;
+    z-index: 2;
+  }
+}
+
+.photos__regular-image {
+  display: flex;
+}
+
+.photos__publication {
+  width: 240px;
+  padding: 25px 20px;
+  margin: 0 auto 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  color: #283645;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: #f2f2f2;
+}
+
+.photos__wrapper {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.photos__author-name {
+  font-weight: bold;
+  margin: 0;
+  &::after {
+    content: ' ';
+  }
+}
+
+.photos__datetime {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.photos__publication-text {
+  font-size: 13px;
+  width: 100%;
+}
+
+.photos__likes {
+  text-transform: uppercase;
+  color: #d22856;
+  position: relative;
+  padding-left: 25px;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    background: url("../img/icon-heart.svg") center no-repeat;
+    width: 13px;
+    height: 12px;
+  }
+}
+
+@media (min-width: 660px)  {
+  .photos__publication {
+    width: 300px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    &--best {
+      width: 620px;
+    }
+  }
+  .photos__author-name {
+    order: 1;
+    &--regular {
+      width: 100%;
+    }
+  }
+  .photos__likes {
+    order: 2;
+    &--regular {
+      order: 3;
+      padding-left: 0;
+      width: 100%;
+      &::before {
+        right: 0;
+        left: auto;
+      }
+    }
+  }
+  .photos__publication-text {
+    order: 3;
+
+    min-height: 48px;
+  }
+  .photos__wrapper {
+    max-width: 620px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+  }
+  .photos__regular {
+    width: 300px;
+  }
+
+  .photos__regular--best {
+    width: 100%;
+    &::before {
+      top: 60px;
+    }
+  }
+
+  .photos__regular-image {
+    min-height: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photos__publication--best {
+    width: 940px;
+    padding-bottom: 0;
+  }
+  .photos__publication-text {
+    margin: 0;
+  }
+  .photos__wrapper {
+    max-width: 940px;
+  }
+
+  .photos__regular-image {
+    min-width: 300px;
+  }
+}

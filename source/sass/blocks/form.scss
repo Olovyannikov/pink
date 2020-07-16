@@ -1,0 +1,454 @@
+.form__wrapper {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form__title {
+  color: #c42a55;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  &--hidden {
+    display: none;
+  }
+  &--contact {
+    display: none;
+  }
+}
+
+.form__label {
+  color: #c42a55;
+  text-transform: uppercase;
+  padding-left: 25px;
+  padding-bottom: 5px;
+  font-size: 14px;
+  line-height: 30px;
+  width: 100%;
+}
+
+.form__input {
+  width: 100%;
+  padding: 15px;
+  margin: 0 0 25px;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+  &::placeholder {
+    color: #1d2631;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.form__group {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 15px;
+  padding-top: 40px;
+  width: 280px;
+  &--contact {
+    padding: 0;
+  }
+}
+
+.form__group--names-wrapper {
+  width: 280px;
+}
+
+.form__achievements {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 0;
+  border: none;
+  position: relative;
+}
+
+.form__wrapper-fieldset {
+  background: #FFFFFF;
+  padding-top: 40px;
+  width: 100%;
+  &--dark {
+    background-color: #f2f2f2;
+  }
+}
+
+.form__achievements-label {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  padding-left: 70px;
+  padding-bottom: 40px;
+}
+
+
+.form__achievements-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__bordered {
+  border: none;
+}
+
+//checkbox
+.form__achievements-checkinput {
+  appearance: none;
+  position: absolute;
+}
+
+.form__achievements-checkbox {
+  position: absolute;
+  box-sizing: border-box;
+  margin-left: -70px;
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border: 2px solid #e5e5e5;
+}
+
+//checkbox-state
+
+.form__achievements-checkinput:checked + .form__achievements-checkbox {
+  background: url("../img/tick.svg") no-repeat center #fff;
+}
+
+//check-focused
+
+.form__achievements-checkinput:focus + .form__achievements-checkbox {
+  background: no-repeat center #fff;
+  outline: 2px solid #283645;
+}
+.form__achievements-checkinput:checked:focus + .form__achievements-checkbox {
+  background: url("../img/tick.svg") no-repeat center #fff;
+  outline: 2px solid #283645;
+}
+
+//check-disabled
+
+.form__achievements-checkinput:disabled + .form__achievements-checkbox {
+  background: no-repeat center #f2f2f2;
+}
+.form__achievements-checkinput:checked:disabled + .form__achievements-checkbox {
+  background: url("../img/tick.svg") no-repeat center #f2f2f2;
+}
+
+.form__application-wrapper {
+  width: 100%;
+  color: #283645;
+  padding-bottom: 60px;
+}
+
+//radio
+.form__application-radioinput {
+  appearance: none;
+  position: absolute;
+}
+
+.form__application-radio {
+  position: absolute;
+  box-sizing: border-box;
+  margin-left: -70px;
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+//radio-state
+
+.form__application-radioinput:checked + .form__application-radio {
+  background: #fff url("../img/icon-radio.svg") no-repeat center;
+}
+
+//radio-focused
+
+.form__application-radioinput:focus + .form__application-radio {
+  background: #fff no-repeat center;
+  outline: 2px solid #283645;
+}
+.form__application-radioinput:checked:focus + .form__application-radio {
+  background: #fff url("../img/icon-radio.svg") no-repeat center;
+  outline: 2px solid #283645;
+}
+
+//radio-disabled
+
+.form__application-radioinput:disabled + .form__application-radio {
+  background: no-repeat center #f2f2f2;
+}
+.form__application-radioinput:checked:disabled + .form__application-radio {
+  background: url("../img/icon-radio.svg") no-repeat center #f2f2f2;
+}
+
+.form__application-label {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  padding-left: 70px;
+  padding-bottom: 40px;
+}
+
+.form__textarea-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.form__textarea {
+  font-family: inherit;
+  font-size: 18px;
+  color: #283645;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 280px;
+  min-height: 200px;
+}
+
+.form__button {
+  background-color: #2aab6d;
+  border: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  height: 64px;
+  width: 280px;
+  padding: 0;
+  box-sizing: border-box;
+  display: block;
+  font-size: 18px;
+  margin: 0 auto 45px;
+}
+
+.form__required-text {
+  text-align: center;
+  color: #283645;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0 0 45px;
+  padding-bottom: 45px;
+
+  &--element {
+    color: #d22856;
+  }
+}
+
+.form__button-wrapper {
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
+.form__button {
+  margin: 0 auto 25px;
+}
+@media (min-width: 660px) {
+  .form__button {
+    margin: 0;
+  }
+  .form__title {
+    &--contact {
+      display: block;
+    }
+  }
+  .form__wrapper-fieldset {
+    background-color: #fff;
+  }
+  .form__achievements-heading br {
+    display: none;
+  }
+  .form__bordered {
+    margin: 0 20px 65px;
+    padding-bottom: 0;
+    border: 2px groove #f2f2f2;
+    background-color:#FFFFFF
+  }
+
+  .form__group {
+    &--names {
+      width: 620px;
+    }
+    &--contact {
+      margin-left: auto;
+      margin-right: auto;
+      width: 500px;
+      padding: 40px;
+      margin-bottom: 0;
+    }
+    &--achievements, &--application {
+      margin-left: 60px;
+      width: 320px;
+    }
+  }
+  .form__label {
+    padding: 0 20px 0 0;
+    width: auto;
+    position: relative;
+    &--contact {
+      padding-left: 20px;
+      padding-top: 10px;
+      padding-bottom: 15px;
+    }
+  }
+
+  .form__icon {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 30px;
+    height: 30px;
+    top: -56px;
+    right: 2px;
+    z-index: 1;
+    padding: 12px;
+    background: url("../img/icon-phone.svg") no-repeat center #e5e5e5;
+    &--mail {
+      background-image: url('../img/icon-mail.svg');
+    }
+  }
+  .form__input {
+    padding: 19.5px;
+    margin: 0;
+    position: relative;
+  }
+  .form__group--names-wrapper {
+    display: flex;
+    width: 620px;
+    align-items: baseline;
+    padding-bottom: 55px;
+    margin: 0 auto;
+  }
+  .form__group--contact-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .form__names {
+    order: 1;
+  }
+
+  .form__app {
+    order: 2;
+  }
+
+  .form__contacts {
+    padding-top: 0;
+    order: 3;
+  }
+
+  .form__achievement {
+    order: 4;
+  }
+
+  .form__reviews {
+    order: 5;
+  }
+  .form__button-wrapper {
+    order: 6;
+  }
+  .form__button-wrapper {
+    display: flex;
+    align-items: baseline;
+    width: 620px;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.form__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.form__textarea {
+  width: 500px;
+}
+
+
+
+@media (min-width: 1200px) {
+  .form__bordered {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 55px;
+  }
+  .form__wrapper {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+  }
+  .form__wrapper-fieldset {
+    padding-top: 25px;
+  }
+  .form__group {
+    margin-bottom: 0;
+    align-content: space-between;
+    &--achievements {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 820px;
+      margin: 0 auto;
+    }
+  }
+  .form__group--contact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 820px;
+  }
+
+  .form__group--contact-wrapper {
+    max-width: 380px;
+  }
+
+  .form__names {
+    margin: 0;
+    width: 435px;
+  }
+
+  .form__app {
+    margin: 0;
+    width: 435px;
+  }
+
+  .form__contacts {
+    padding-top: 0;
+    order: 3;
+  }
+
+  .form__achievement {
+    order: 4;
+  }
+
+  .form__reviews {
+    order: 5;
+    margin-bottom: 60px;
+  }
+
+  .form__textarea {
+    width: 820px;
+    height: 130px;
+  }
+  .form__button-wrapper {
+    width: 940px;
+  }
+
+  .form__button {
+    width: 300px;
+  }
+  .page-footer__social--extra {
+    max-width: 940px;
+    justify-content: space-between;
+  }
+}

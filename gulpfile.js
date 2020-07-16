@@ -60,6 +60,15 @@ gulp.task("images", function() {
     .pipe(gulp.dest("build/img"));
 });
 
+gulp.task("pictures", function() {
+  return gulp.src("source/pictures/**/*.{png,jpg,gif}")
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true})
+    ]))
+    .pipe(gulp.dest("build/pictures"));
+});
+
 gulp.task("symbols", function() {
   return gulp.src("source/img/icons/*.svg")
     .pipe(svgmin())
@@ -96,7 +105,28 @@ gulp.task("js:copy", function() {
       .pipe(gulp.dest("build/js"));
 });
 
+gulp.task("slider", function() {
+  gulp.src("source/js/slider.js")
+    .pipe(gulp.dest("build/js"))
+    .pipe(jsmin())
+    .pipe(rename("slider.min.js"))
+    .pipe(gulp.dest("build/js"));
+});
+
+gulp.task("slider:copy", function() {
+  return gulp.src("source/js/slider.js")
+    .pipe(gulp.dest("build/js"))
+    .pipe(jsmin())
+    .pipe(rename("slider.min.js"))
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("js:update", ["js:copy"], function(done) {
+  server.reload();
+  done();
+});
+
+gulp.task("slider:update", ["slider:copy"], function(done) {
   server.reload();
   done();
 });
@@ -121,7 +151,9 @@ gulp.task ("build", function(fn) {
     "copy",
     "style",
     "js",
+    "slider",
     "images",
+    "pictures",
     "symbols",
     fn
   );

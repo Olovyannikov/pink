@@ -1,3 +1,7 @@
+.page-main {
+  overflow: hidden;
+}
+
 .page-main__title,
 .page-main__subtitle {
   text-align: center;
@@ -24,6 +28,19 @@
 
 .page-main__wrapper {
   background-color: #f2f2f2;
+}
+
+.page-main__disclaimer {
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-align: center;
+  padding: 50px 20px 0;
+  width: 280px;
+  margin: 0 auto;
+  &--extra {
+    display: none;
+  }
 }
 
 .page-main__wrapper-background {
@@ -106,6 +123,19 @@
     position: absolute;
     z-index: 0;
   }
+
+  .page-main__disclaimer {
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+    text-align: center;
+    margin: 0 auto;
+    width: 490px;
+    padding: 95px 20px 75px;
+    &--extra {
+      display: inline-block;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
@@ -144,5 +174,9 @@
     font-size: 17px;
     line-height: 30px;
     margin: 0 auto;
+  }
+
+  .page-main__disclaimer {
+    width: 820px;
   }
 }

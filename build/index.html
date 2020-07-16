@@ -7,9 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Pink!</title>
-    <link rel="stylesheet" href="../../../../Документы/GitHub/pink/source/sass/blocks/page-main.scss">
-
-
 </head>
 <body>
 <!-- SVG-спрайт -->
@@ -61,10 +58,12 @@
             </button>
             </div>
             <ul class="navigation__list navigation__list--close">
-                <li class="navigation__list-item"><a href="#" class="navigation__list-link">Главная</a></li>
-                <li class="navigation__list-item"><a href="#" class="navigation__list-link">Фотографии</a></li>
-                <li class="navigation__list-item"><a href="#" class="navigation__list-link">Конкурс</a></li>
-                <li class="navigation__list-item"><a href="#" class="navigation__list-link">HTML Academy</a></li>
+                <li class="navigation__list-item"><a class="navigation__list-link navigation__list-link--active">
+                  Главная</a></li>
+                <li class="navigation__list-item"><a href="photo.html" class="navigation__list-link">Фотографии</a></li>
+                <li class="navigation__list-item"><a href="form.html" class="navigation__list-link">Конкурс</a></li>
+                <li class="navigation__list-item"><a href="https://htmlacademy.ru" class="navigation__list-link">HTML
+                  Academy</a></li>
             </ul>
         </nav>
         </div>
@@ -108,7 +107,7 @@
     <p class="page-main__subtitle"> Нам есть, что вам предложить!</p>
 
     <div class="page-main__wrapper">
-        <svg class="page-main__wrapper-background" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+        <svg class="page-main__wrapper-background" version="1.0" xmlns="http://www.w3.org/2000/svg"
              xmlns:xlink="http://www.w3.org/1999/xlink"
              x="0px" y="0px" width="100%" height="50px" viewBox="0 0 1200 94.074"
              enable-background="new 0 0 1200 94.074" xml:space="preserve" preserveAspectRatio="none">
@@ -334,7 +333,7 @@
         <iframe src="https://yandex.ru/map-widget/v1/-/CKeb7RPI" width="100%" height="500" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
     </div>
 
-<section class="page-footer__social social">
+<section class="page-footer__social social page-footer__social--index">
     <svg id="page-footer__logo" version="1.0" xmlns="http://www.w3.org/2000/svg"
          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150" height="40"
          xml:space="preserve">
@@ -383,5 +382,6 @@
 </footer>
 
 <script src="js/script.min.js"></script>
+<script src="js/slider.min.js"></script>
 </body>
 </html>
