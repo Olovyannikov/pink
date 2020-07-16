@@ -1518,7 +1518,8 @@ img {
   .page-main__disclaimer{
     width: 820px; }
   .research{
-    background-color: #f2f2f2; }
+    background-color: #f2f2f2;
+    padding-bottom: 55px; }
   .research__wrapper{
     background-color: #f2f2f2;
     max-width: 940px; }
