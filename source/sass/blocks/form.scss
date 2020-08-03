@@ -360,20 +360,15 @@
     justify-content: space-between;
     flex-direction: row;
   }
+  .form__textarea {
+    width: 500px;
+  }
 }
 
 .form__wrapper {
   display: flex;
   flex-wrap: wrap;
 }
-
-
-
-.form__textarea {
-  width: 500px;
-}
-
-
 
 @media (min-width: 1200px) {
   .form__bordered {

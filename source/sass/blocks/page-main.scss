@@ -152,11 +152,10 @@
     background-color: transparent;
     display: flex;
   }
-  .page-main__features-item {
-    width: 33%;
-  }
+
   .page-main__image--desktop {
-    display: block;
+    display: flex;
+    justify-content: center;
     margin-bottom: 55px;
   }
   .page-main__features-title,
