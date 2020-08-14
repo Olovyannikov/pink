@@ -7,9 +7,13 @@
 }
 
 .downloads__link {
-
   max-width: 280px;
-  margin: 20px auto 30px;
+  width: 280px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto 30px;
 
   color: white;
   text-decoration: none;
@@ -19,7 +23,7 @@
 
   font-size: 18px;
   font-weight: bold;
-  padding: 15px 36px;
+  padding: 15px 35px;
   transition: .2s;
   z-index: 1;
   &:hover {
