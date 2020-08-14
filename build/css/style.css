@@ -700,7 +700,11 @@
 .form__wrapper-fieldset {
   background: #FFFFFF;
   padding-top: 40px;
-  width: 100%; }
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
   .form__wrapper-fieldset--dark {
     background-color: #f2f2f2; }
 
@@ -721,6 +725,7 @@
   border: none; }
 
 .form__achievements-checkinput {
+  display: none;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -758,6 +763,7 @@
   padding-bottom: 60px; }
 
 .form__application-radioinput {
+  display: none;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -891,7 +897,8 @@
 
 .photos__regular-image {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  min-height: 180px; }
 
 .photos__publication {
   width: 240px;

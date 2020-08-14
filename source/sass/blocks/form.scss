@@ -68,6 +68,8 @@
   background: #FFFFFF;
   padding-top: 40px;
   width: 100%;
+  display: flex;
+  justify-content: center;
   &--dark {
     background-color: #f2f2f2;
   }
@@ -93,6 +95,7 @@
 
 //checkbox
 .form__achievements-checkinput {
+  display: none;
   appearance: none;
   position: absolute;
 }
@@ -141,6 +144,7 @@
 
 //radio
 .form__application-radioinput {
+  display: none;
   appearance: none;
   position: absolute;
 }
